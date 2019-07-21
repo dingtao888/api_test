@@ -50,7 +50,7 @@
     <!-- 对应到上面的target为report -->
     <target name="report">
         <tstamp><format property="report.datestamp" pattern="yyyy/MM/dd HH:mm"/></tstamp>
-        <xslt classpathref="xslt.classpath" force="true" in="E:\Jmeter\Apache-jmeter-5.0\loadtest\专业版\jmeter_result.jtl" out="E:\Jmeter\Apache-jmeter-5.0\loadtest\专业版\jmeter_result.html" style="${jmeter.home}/extras/jmeter-results-report_21.xsl" 
+        <xslt classpathref="xslt.classpath" force="true" in="E:\Jenkins\workspace\BDIP专业版\jmeter_result.jtl" out="E:\Jenkins\workspace\BDIP专业版\jmeter_result.html" style="${jmeter.home}/extras/jmeter-results-report_21.xsl" 
         >
          <param name="dateReport" expression="${report.datestamp}"/>
          </xslt>
